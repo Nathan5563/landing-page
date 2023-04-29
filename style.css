@@ -22,8 +22,23 @@
 .primary-light {
     color: #1F2937;
 }
+.cta-color {
+    background-color: #3882F6;
+}
 ul a {
     text-decoration: none;
+}
+
+/* button */
+.hero-btn, .cta-btn {
+    font-size: 24px;
+    width: auto;
+    border-radius: 10px;
+    align-self: flex-start;
+    padding: 8px 40px;
+    font-weight: 600;
+    color: white;
+    border: none;
 }
 
 /* header */
@@ -32,11 +47,11 @@ ul a {
     display: flex;
     justify-content: space-around;
 }
-.left-header {
+.logo {
     font-size: 24px;
     font-weight: 700;
 }
-.right-header ul {
+.links ul {
   list-style-type: none;
   display: flex;
   gap: 16px;
@@ -51,10 +66,10 @@ ul a {
     height: 70vh;
     gap: 5%;
 }
-.left-hero, right-hero {
+.hero-group, hero-image {
     flex-basis: 40%;
 }
-.left-hero {
+.hero-group {
     display: flex;
     flex-basis: 30%;
     flex-direction: column;
@@ -64,22 +79,11 @@ ul a {
     font-size: 72px;
     font-weight: 900;
 }
-.hero-desc {
+.hero-text {
     font-size: 24px;
 }
 .hero-img {
     width: 500px;
-}
-.hero-btn {
-    font-size: 24px;
-    width: auto;
-    border-radius: 10px;
-    align-self: flex-start;
-    padding: 8px 40px;
-    background-color: #3882F6;
-    font-weight: 600;
-    color: white;
-    border: none;
 }
 
 /* info */
@@ -108,7 +112,7 @@ ul a {
     padding: 10px;
 }
 .info-img {
-    border: 2px solid #1F2937;
+    border: 2.5px solid #1F2937;
     border-radius: 20px;
 }
 .info-text {
@@ -137,4 +141,33 @@ ul a {
     width: 60%;
     display: flex;
     justify-content: flex-end;
+}
+
+/* call to action */
+.cta {
+    height: 50vh;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta-container {
+    width: 70%;
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cta-title {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+}
+.cta-text {
+    font-size: 20px;
+}
+.cta-btn {
+    border: 2.5px solid white;
+    align-self: center;
 }
