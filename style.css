@@ -1,34 +1,39 @@
+/* roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* general */
 * {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
 }
-.primary {
+.dark {
+    background-color: #1F2937;
+}
+.primary-dark {
     color: #F9FAF8;
     font-weight: 900;
 }
-.secondary {
+.secondary-dark {
     color: #E5E7EB;
 }
-.bg1 {
-    background-color: #1F2937;
+.primary-light {
+    color: #1F2937;
+    font-weight: 900;
 }
 ul a {
     text-decoration: none;
 }
 
+/* header */
 .header {
     padding: 2vh;
     display: flex;
     justify-content: space-around;
 }
-
 .left-header {
     font-size: 24px;
 }
-
 .right-header ul {
   list-style-type: none;
   display: flex;
@@ -36,36 +41,32 @@ ul a {
   font-size: 18px;
 }
 
+/* hero */
 .hero-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15vh;
+    height: 70vh;
     gap: 5%;
 }
-
 .left-hero, right-hero {
     flex-basis: 40%;
 }
-
 .left-hero {
     display: flex;
+    flex-basis: 30%;
     flex-direction: column;
     gap: 24px;
 }
-
 .hero-text {
     font-size: 72px;
 }
-
 .hero-desc {
     font-size: 24px;
 }
-
 .hero-img {
     width: 500px;
 }
-
 .hero-btn {
     font-size: 24px;
     width: auto;
@@ -76,4 +77,42 @@ ul a {
     font-weight: 600;
     color: white;
     border: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    height: 60vh;
+}
+
+.info-title {
+    font-size: 48px;
+}
+
+.group {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    width: 100vw;
+    padding: 64px;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    max-width: 12vw;
+    padding: 10px;
+}
+
+.info-img {
+    border: 2px solid #1F2937;
+    border-radius: 20px;
+}
+
+.info-text {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
 }
