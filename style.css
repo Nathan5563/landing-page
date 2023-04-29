@@ -145,6 +145,7 @@ ul a {
     width: 60%;
     display: flex;
     justify-content: flex-end;
+    padding: 10px;
 }
 
 /* call to action */
@@ -173,4 +174,15 @@ ul a {
 .cta-btn {
     border: 2.5px solid white;
     align-self: center;
+}
+
+/* footer */
+.footer {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text {
+    color: white;
 }
